@@ -9,12 +9,10 @@ let index = 0;
 
 function onKeyDown(e) {
   const key = parseInt(e.which || e.detail);
-  console.log(key);
 
   if (key === code[index]) {
-    console.log(key);
     index++;
-    console.log(index);
+
     if (index === code.length) {
       alert("You've cracked the code!");
       index = 0;
